@@ -8,7 +8,7 @@
     --primary-color: hsl(0, 36%, 70%);
     --secondary-color: hsl(0, 93%, 68%);
     --neutral-color: hsl(0, 6%, 24%);
-    --gradient-1: Linear,
+    --gradient-1: linear ,
         135deg,
         from hsl(0, 0%, 100%),
         to hsl(0, 100%, 98%);
@@ -19,6 +19,118 @@
 }
 
 body{
-    height: 100vh;
+    /* height: 100vh; */
     font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.logo{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 30px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.hero-bg{
+    background-image: url(./images/hero-mobile.jpg);
+    /* height: 30vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 40vh;
+}
+
+.hero-text{
+    margin-top: 40px;
+}
+
+.hero-text h1{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 40px;
+    color: var(--neutral-color);
+}
+
+.hero-text h1 span{
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.hero-description{
+    width: 90%;
+    margin: 30px auto auto auto;
+
+}
+
+.hero-description p{
+    text-align: center;
+    line-height: 20px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.hero-form{
+    width: 85%;
+    margin: 30px auto auto auto;
+    position: relative;
+}
+
+.hero-form form input {
+    padding: 20px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid hsl(0, 36%, 70%);
+    font-size: 16px;
+    color: var(--primary-color);
+    outline: var(--primary-color);
+}
+
+input::placeholder{
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+input:focus{
+    outline: none;
+}
+
+.submit-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: linear-gradient(
+        135deg,
+         hsl(0, 80%, 86%),
+         hsl(0, 74%, 74%));
+    transition:  .5s ease;
+}
+
+.submit-btn img{
+    width: 15px;
+}
+
+.submit-btn:hover{
+    background: linear-gradient(135deg,
+    hsl(0, 36%, 70%),
+     hsl(0, 100%, 98%));
+
+    box-shadow: 0 20px 10px rgba(231, 139, 127, 0.397);
+        
+}
+
+
+@media only screen and (min-width: 800px){
+    
 }
